@@ -1,6 +1,6 @@
-aws_region = "ap-south-1"
+aws_region = "eu-central-1"
 
-ami_id = "YOUR_AMI_ID"
+ami_id = "ami-06121aa3085b6f918"
 
 instance_type = "t3.micro"
 
