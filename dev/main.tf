@@ -28,7 +28,7 @@ data "aws_subnets" "default" {
 
 # S3 module
 module "s3" {
-  source = "../../modules/s3"
+  "git::https://github.com/vic1392/terraform-aws-infrastructure.git//modules/s3?ref=main"
 
   bucket_name = var.bucket_name
   environment = "dev"
@@ -36,7 +36,7 @@ module "s3" {
 
 # EC2 module
 module "ec2" {
-  source = "../../modules/ec2"
+  source = "git::https://github.com/vic1392/terraform-aws-infrastructure.git//modules/ec2?ref=main"
 
   ami_id        = var.ami_id
   instance_type = var.instance_type
